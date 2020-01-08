@@ -649,7 +649,6 @@ int compress_wait(struct compress *compress, int timeout_ms)
 	return oops(compress, EIO, "poll signalled unhandled event");
 }
 
-#ifdef ENABLE_EXTENDED_COMPRESS_FORMAT
 int compress_get_metadata(struct compress *compress,
 		struct snd_compr_metadata *mdata) {
 	int version;
